@@ -1,0 +1,24 @@
+ALGORITHM table_method
+VAR
+    set1: Integer[5];
+    set2: INTEGER[5];
+    set3: INTEGER;
+    i,j,k,som,duble: INTEGER;
+    i,j,k,som,duble:=0;
+    
+BEGIN
+//parcourir le premier tableau
+FOR i FROM 0 TO set2.length STEP 1  DO    
+//parcourir aussi le deuxième tableau
+FOR j FROM 0 TO set2.length-1  STEP 1  DO
+    WHILE (set1[i] == set2[j]) DO
+     som:= set1[i]+set2[j];
+         FOR k FROM O TO set3.length STEP 1  DO
+          set3[k]:=set1[i] || set2[j];  //je ne sais pas comment coder cette idée
+         END_FOR
+    END_WHILE
+END_FOR
+END_FOR
+    écrire(set3[k]);
+    écrire(som) tructions;
+END

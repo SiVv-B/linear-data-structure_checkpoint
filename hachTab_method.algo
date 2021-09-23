@@ -1,0 +1,42 @@
+ALGORITHM htab_method
+VAR
+    htab: HASH_TABLE<INTEGER ,Integer >;
+    set1: Integer[5];
+    set2: INTEGER[5];
+    set3: INTEGER;
+    i,j,k,som,duble: INTEGER;
+    i,j,k,som,duble:=0;
+   
+
+BEGIN
+//parcourir premier tableau
+    FOR i FROM 0 TO set1.length-1  STEP 1  DO   
+        IF (htab.lookup(step1[i])=TRUE) THEN
+            duble:=htab.get(set1[i]+1);
+        ELSE
+             htab.insert(set1[i],1);
+        END_IF     
+    END_FOR
+//parcourir deuxième tableau
+    FOR j FROM 0 TO set2.length-1  STEP 1  DO
+    IF (htab.lookup(step2[j])=TRUE) THEN
+        duble:=htab.get(set2[j]+1);
+    ELSE
+         htab.insert(set2[j],1);
+    END_IF     
+END_FOR
+// extraire les valeurs doubles et les mettre dans un troisième tableau
+    FOR i FROM O TO set1.length-1  STEP 1  DO
+        IF (htab.get(set1[i])<>1 || (htab.get(set2[j])<>1) THEN
+        FOR k FROM 0 TO set3.lenght STEP 1  DO
+            set3[k]:= htab.insert(sert1[i],sert2[j]);
+            som := set1[i] + set2[j];        
+        END_FOR
+        END_IF    
+    END_FOR
+    read (som);
+    write (som);
+    read (set3[k]);
+    write (set3[k]);
+
+END
